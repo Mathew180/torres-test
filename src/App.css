@@ -1,38 +1,83 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+   overflow: hidden;
+  margin: 0 auto;
+  margin-top: 70px;
+  max-width: 330px;
+  background: rgb(61, 59, 59);
+  height: 100%;
+  color:white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+   height: 60px;
+   background: rgb(61, 59, 59);
+   box-shadow: 2px 4px 6px rgb(92, 89, 89);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar ul{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+}
+
+.navbar ul li{
+  padding: 1rem;
+  text-decoration:none;
+  list-style: none;
+  font-weight:bold;
+  
+}
+
+.profile-pics{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-pics img{
+  width: 120px;
+  height:120px;
+  background: blue;
+  border-radius: 70px;
+  margin: 0 auto;
+  margin-top :20px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skills{
+  margin: 12px 0;
 }
+
+.skills h4{
+  color: rgb(167, 163, 163);
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.skills h6{
+  color: rgb(218, 214, 214);
+  font-weight: 500;
+  margin-left: 14px;
+}
+
+.skills ul{
+   display: flex;
+   flex-wrap: wrap;
+  margin-top: 0;margin-left: 5px;
+}
+
+.skills ul li{
+  font-size: .9em;
+  list-style: none;
+  text-decoration: none;
+  background: rgb(100, 96, 96);
+  padding: 7px;
+  border-radius: 25px;
+  margin: 5px;
+  cursor: pointer;
+}           
